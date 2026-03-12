@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Jira 6.4 Dark Mode",
+  "version": "1.0",
+  "description": "Dark mode for legacy Jira 6.4.6",
+  "content_scripts": [
+    {
+      "matches": ["*://jira.nnv.pl/*"],
+      "css": ["style.css"]
+    }
+  ]
+}
