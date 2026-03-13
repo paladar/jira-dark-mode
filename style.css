@@ -650,10 +650,13 @@ h1, h2, h3, h4, body {
 .issue-body-content .module>.mod-header .ops,
 .aui-dd-parent .aui-dropdown, .aui-dropdown, .aui-dd-parent .aui-shadow-parent,
 .aui-dd-parent .aui-dropdown li.dropdown-item, .aui-dropdown li.dropdown-item,
-.editable-field .save-options {
+.editable-field .save-options,
+.calendar, .calendar table,
+.calendar .headrow {
     background: var(--bg-card) !important;
 }
 
+.ghx-marker,
 .jira-dialog .jira-dialog-heading,
 .jira-dialog .buttons-container,
 .wiki-edit-toolbar,
@@ -720,4 +723,13 @@ pre span {
 
 .issue-header.detached {
     box-shadow: 0 0 15px 5px var(--bg-card) !important;
+}
+
+.ghx-issue-compact.ghx-flagged,
+.ghx-issue-compact.ghx-flagged .ghx-end {
+    background: var(--status-warn-bg) !important;
+}
+
+.ghx-issue-compact.ghx-flagged .ghx-end {
+    box-shadow: -4px 0 3px var(--status-warn-bg), 0 -3px 3px var(--status-warn-bg) !important;
 }
