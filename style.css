@@ -725,11 +725,29 @@ pre span {
     box-shadow: 0 0 15px 5px var(--bg-card) !important;
 }
 
-.ghx-issue-compact.ghx-flagged,
-.ghx-issue-compact.ghx-flagged .ghx-end {
+.ghx-issue-compact.ghx-flagged {
     background: var(--status-warn-bg) !important;
 }
 
 .ghx-issue-compact.ghx-flagged .ghx-end {
+    background: var(--status-warn-bg) !important;
     box-shadow: -4px 0 3px var(--status-warn-bg), 0 -3px 3px var(--status-warn-bg) !important;
+}
+
+.ghx-issue-compact.ghx-selected, .ghx-issue-compact .ghx-selected-group{
+    background: var(--bg-selected) !important;
+}
+
+.ghx-issue-compact.ghx-selected .ghx-end , .ghx-issue-compact .ghx-selected-group .ghx-end {
+    background: var(--bg-selected) !important;
+    box-shadow: -4px 0 3px var(--bg-selected), 0 -3px 3px var(--bg-selected) !important;
+}
+
+.ghx-issue-compact:hover {
+    background: var(--bg-hover) !important;
+}
+
+.ghx-issue-compact:hover .ghx-end {
+    background: var(--bg-hover) !important;
+    box-shadow: -4px 0 3px var(--bg-hover), 0 -3px 3px var(--bg-hover) !important;
 }
